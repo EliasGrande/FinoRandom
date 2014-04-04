@@ -3,11 +3,15 @@ FinoRandom
 
 FinoRandom es un script de Greasemonkey que hace que el `Random!` de [FinoFilipino](http://finofilipino.org) se repita menos.
 
+Básicamente hace lo siguiente:
+
+![img/flujo-simple.png](https://raw.githubusercontent.com/EliasGrande/FinoRandom/master/img/flujo-simple.png)
+
 Instalación
 -----------
 
 1. Primero instalas [Greasemonkey](https://addons.mozilla.org/es/firefox/addon/greasemonkey/), si no lo tienes.
-2. Luego instalas el script con el botón de `Install` de [FinoRandom](http://userscripts.org/scripts/show/446003) en userscripts.org.
+2. Luego instalas el script con el botón de `Install` de [FinoRandom en userscripts.org](http://userscripts.org/scripts/show/446003).
 
 Configuración
 -------------
@@ -19,13 +23,6 @@ Permite hacer lo siguiente:
 * Editar el número de intentos que hace (por defecto 10), esto es, si hace ese número de intentos y siempre recibe páginas que ya visitaste entonces desiste y te lleva a dicha página.
 * Editar el número de páginas que recuerda (por defecto 40), esto es, al llegar al máximo va "olvidando" las mas antiguas.
 * Eliminar historial de randoms visitados.
-
-Flujo simplificado
-------------------
-
-Básicamente hace lo siguiente:
-
-![img/flujo-simple.png](https://raw.githubusercontent.com/EliasGrande/FinoRandom/master/img/flujo-simple.png)
 
 Código
 ------
