@@ -8,7 +8,10 @@
 // @include      http://finofilipino.org*
 // @exclude      */photoset_iframe/*
 // ==/UserScript==
-/*! FinoRandom (C) 2014 Elías Grande Cásedas | GNU-GPL | gnu.org/licenses */
+/*!
+	FinoRandom (c) 2014 Elías Grande Cásedas | BSD-2-Clause
+	https://github.com/EliasGrande/FinoRandom
+*/
 (function(){
 ////////////
 
