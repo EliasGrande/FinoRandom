@@ -207,9 +207,6 @@ var win = window, doc;
 try { if (unsafeWindow) win = unsafeWindow; } catch(e) {}
 doc = win.document;
 
-var querySelector = doc.querySelector.bind(doc);
-var querySelectorAll = doc.querySelectorAll.bind(doc);
-
 var addEventListener = function(obj, eventName, callback) {
 	obj.addEventListener(eventName, callback, false);
 };
@@ -442,7 +439,7 @@ var requestNewRandomUrl = function(callback) {
 
 // -----------------------------------------------------
 // --- Go go go, alter the motherfucking random link ---
-// -----------------------------------------------------v
+// -----------------------------------------------------
 
 var onDOMContentLoadedHandler = function() {
 	var randomLink = doc.querySelector(RANDOM_LINK_QUERY);
