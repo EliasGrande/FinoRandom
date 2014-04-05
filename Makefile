@@ -1,7 +1,7 @@
 
 SRC = ./FinoRandom.user.js
 MIN = ./FinoRandom-min.user.js
-UTIL = ./greaseutil
+UTIL = ./greaseutil.sh
 COMPRESSOR = ./yuicompressor.jar
 
 $(MIN): $(SRC) $(COMPRESSOR) clean
@@ -19,4 +19,3 @@ test:
 
 install: $(MIN)
 	$(UTIL) fireinstall $(MIN)
-
