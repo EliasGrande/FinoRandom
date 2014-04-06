@@ -1,21 +1,28 @@
 
 SRC = ./FinoRandom.user.js
 MIN = ./FinoRandom-min.user.js
-UTIL = ./greaseutil.sh
-COMPRESSOR = ./yuicompressor.jar
+UTIL = sh ./greaseutil.sh
+COMPRESSOR := $(shell $(UTIL) compressorpath | sed -e 's/ /\\ /g')
 
-$(MIN): $(SRC) $(COMPRESSOR) clean
+.PHONY: all clean cleanutil test install
+
+all: $(MIN)
+
+$(MIN): $(SRC) $(COMPRESSOR)
 	$(UTIL) compress $(SRC) > $(MIN)
 
 $(COMPRESSOR):
 	$(UTIL) downloadcompressor
 
-clean:
-	rm -f $(MIN)
-	find ./ -name "*~" | while read f; do rm -f "$$f"; done
-
-test:
+test: $(SRC)
 	$(UTIL) fireinstall $(SRC)
 
 install: $(MIN)
 	$(UTIL) fireinstall $(MIN)
+
+clean:
+	rm -f $(MIN)
+	find ./ -name "*~" | while read f; do rm -f "$$f"; done
+
+cleanutil:
+	$(UTIL) clean
