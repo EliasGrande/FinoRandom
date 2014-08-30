@@ -6,7 +6,7 @@ FinoRandom es un script de [Greasemonkey] que hace que el `Random!` de
 
 Básicamente hace lo siguiente:
 
-![img/flujo-simple.png](https://raw.githubusercontent.com/EliasGrande/FinoRandom/master/img/flujo-simple.png)
+![img/flujo-simple.png](img/flujo-simple.png?raw=true)
 
 Instalación
 -----------
@@ -39,10 +39,10 @@ Código
 Licencia
 --------
 
-[(BSD-2-Clause) Copyright (c) 2014 Elías Grande Cásedas](https://raw.githubusercontent.com/EliasGrande/FinoRandom/master/LICENSE)
+[(BSD-2-Clause) Copyright (c) 2014 Elías Grande Cásedas](LICENSE?raw=true)
 
 [Greasemonkey]:https://addons.mozilla.org/es/firefox/addon/greasemonkey/
 [FinoFilipino]:http://finofilipino.org
 [FinoRandom en GitHub]:https://github.com/EliasGrande/FinoRandom/blob/master/FinoRandom.user.js
-[FinoRandom en UserScripts]:http://userscripts.org/scripts/show/446003
+[FinoRandom en UserScripts]:http://userscripts-mirror.org/scripts/show/446003
 [YUI Compressor]:http://yui.github.io/yuicompressor/
